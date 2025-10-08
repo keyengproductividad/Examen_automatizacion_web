@@ -45,7 +45,7 @@ public class LoginStepsDef {
         screenShot();
     }
 
-    @Y("me logueo con mi usuario: {string} y contraseña: {string}")
+    @Y("me logueo con mi usuario {string} y contraseña {string}")
     public void meLogueoConMiUsuarioYContraseña(String user, String password) {
         LoginSteps loginSteps = new LoginSteps(driver);
         loginSteps.typeUser(user);
